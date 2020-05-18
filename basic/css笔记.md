@@ -92,7 +92,6 @@
 		:after, :before, 通过伪类的方式给元素添加一段文本内容，使用content属性
 		eg.div:after{content="..."}
 		:checked, :disabled, :focus（获取光标的时候）, 针对表单元素
-		
 	9.结构性伪类选择器：
 		1.nth-of-type(index)和nth-child(index)（两个选择器效果几乎完全一样）:（角标从1开始, n表示从0到无穷大, 2n表示偶数，2n+1表示奇数）
 		2.first-of-type和first-child:index = 1
