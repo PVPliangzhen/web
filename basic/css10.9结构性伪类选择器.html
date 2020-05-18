@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* li:nth-of-type(2){background: red;}/* 找到第二个li,即id=333 */ */
+			/* li:nth-child(2){background: red;}/* 没效果,因为第二个孩子为div, 而不是找第二个li*/ */
+		 	/* li:nth-child(3){background: red;} /* 找到第三个孩子,是li,那么变红,即id=333变红 */ */
+			/* div:nth-child(2){background: red;} /* 找到第二个孩子,是div,那么变红 */ */
+			/* ！！！！！！style中不能有注释的代码,测试的时候要删除掉其他所有的注释代码 ！！！！！！*/
+			/* div:only-of-type{background: red;} *//* 能够变红 因为ul中div是唯一的类型，其他类型全是li*/
+			/* div:only-child{background: red;} *//* 不能变红，因为不是唯一的child，还有五个li*/
+		</style> 
+	</head>
+	<body>
+		<ul>
+			<li></li>
+			<div>
+				aaaaaaaaaaaa
+			</div>
+			<li id="333"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+</html>
